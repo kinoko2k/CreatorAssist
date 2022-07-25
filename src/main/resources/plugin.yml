@@ -1,0 +1,29 @@
+name: CreatorAssist
+version: '${project.version}'
+main: com.kinoko2k.creatorassist.Creatorassist
+api-version: 1.18
+authors: [ Kinoko_2K ]
+description: ver 1.18.1
+website: kinoko2k.github.io
+
+commands:
+  gma:
+    permission: mod.assist.creative
+    description: ゲームモードをアドベンチャーモードに切り替えます
+    permission-message: あなたはゲームモードを切り替える権限がありません
+    usage: /gma
+  gmc:
+    permission: mod.assist.survival
+    description: ゲームモードをクリエイティブに切り替えます
+    permission-message: あなたはゲームモードを切り替える権限がありません
+    usage: /gmc
+  gms:
+    permission: mod.assist.survival
+    description: ゲームモードをサバイバルモードに切り替えます
+    permission-message: あなたはゲームモードを切り替える権限がありません
+    usage: /gms
+  gmsp:
+    permission: mod.assist.survival
+    description: ゲームモードをスペクテイターモードに切り替えます
+    permission-message: あなたはゲームモードを切り替える権限がありません
+    usage: /gms
