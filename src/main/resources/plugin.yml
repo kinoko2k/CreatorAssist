@@ -8,22 +8,40 @@ website: kinoko2k.github.io
 
 commands:
   gma:
-    permission: mod.assist.creative
+    permission: creator.admin
     description: ゲームモードをアドベンチャーモードに切り替えます
     permission-message: あなたはゲームモードを切り替える権限がありません
     usage: /gma
   gmc:
-    permission: mod.assist.survival
+    permission: creator.admin
     description: ゲームモードをクリエイティブに切り替えます
     permission-message: あなたはゲームモードを切り替える権限がありません
     usage: /gmc
   gms:
-    permission: mod.assist.survival
+    permission: creator.admin
     description: ゲームモードをサバイバルモードに切り替えます
     permission-message: あなたはゲームモードを切り替える権限がありません
     usage: /gms
   gmsp:
-    permission: mod.assist.survival
+    permission: creator.admin
     description: ゲームモードをスペクテイターモードに切り替えます
     permission-message: あなたはゲームモードを切り替える権限がありません
-    usage: /gms
+    usage: /gmsp
+  br:
+    permission: creator.admin
+    description: ゲームモードをスペクテイターモードに切り替えます
+    permission-message: あなたはゲームモードを切り替える権限がありません
+    usage: /br
+  hideme:
+    permission: creator.admin
+    description: ゲームモードをinvisibleモードに切り替えます
+    permission-message: あなたはinvisibleモードを切り替える権限がありません
+    usage: /br
+
+permissions:
+  creator.player:
+    description: ふつうのひと。
+    default: true
+  creator.admin:
+    description: すべてを操れる。
+    default: op
