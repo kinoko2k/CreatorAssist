@@ -32,11 +32,6 @@ commands:
     description: ゲームモードをスペクテイターモードに切り替えます
     permission-message: あなたはゲームモードを切り替える権限がありません
     usage: /br
-  hideme:
-    permission: creator.admin
-    description: ゲームモードをinvisibleモードに切り替えます
-    permission-message: あなたはinvisibleモードを切り替える権限がありません
-    usage: /br
 
 permissions:
   creator.player:
