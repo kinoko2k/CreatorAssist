@@ -1,6 +1,7 @@
 package com.kinoko2k.creatorassist;
 
 // import org.bukkit.Bukkit;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.Material;
@@ -62,6 +63,25 @@ public final class Creatorassist extends JavaPlugin implements Listener, Command
             Inventory inv = player.getInventory();
             inv.setItem(1, new ItemStack(Material.BARRIER,64));
             player.sendMessage(ChatColor.WHITE + "バリアブロックを" + ChatColor.GOLD + "64個" + ChatColor.WHITE + "付与しました。");
+            return true;
+        }
+        if(command.getName().equalsIgnoreCase("hideme") && args.length == 1) {
+            if (!(sender instanceof Player)) {
+                sender.sendMessage("このコマンドはゲーム内から実行してください！");
+                return true;
+            }
+            Player s = (Player) sender;
+
+            if (args.length != 1) {
+                return false;
+            }
+
+            Player target = Bukkit.getPlayerExact(args[0]);
+            if (target == null) {
+                sender.sendMessage("Player " + args[0] + " というプレイヤーは見つかりません！");
+                return true;
+            }
+            target.hidePlayer(s);
             return true;
         }
         return false;

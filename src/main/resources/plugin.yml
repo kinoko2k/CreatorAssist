@@ -7,31 +7,36 @@ description: ver 1.18.1
 website: kinoko2k.github.io
 
 commands:
-  gma:
+  ga:
     permission: creator.admin
     description: ゲームモードをアドベンチャーモードに切り替えます
     permission-message: あなたはゲームモードを切り替える権限がありません
-    usage: /gma
-  gmc:
+    usage: /ga
+  gc:
     permission: creator.admin
     description: ゲームモードをクリエイティブに切り替えます
     permission-message: あなたはゲームモードを切り替える権限がありません
-    usage: /gmc
-  gms:
+    usage: /gc
+  gs:
     permission: creator.admin
     description: ゲームモードをサバイバルモードに切り替えます
     permission-message: あなたはゲームモードを切り替える権限がありません
-    usage: /gms
-  gmsp:
+    usage: /gs
+  gsp:
     permission: creator.admin
     description: ゲームモードをスペクテイターモードに切り替えます
     permission-message: あなたはゲームモードを切り替える権限がありません
-    usage: /gmsp
+    usage: /gsp
   br:
     permission: creator.admin
-    description: ゲームモードをスペクテイターモードに切り替えます
-    permission-message: あなたはゲームモードを切り替える権限がありません
+    description: バリアブロックを64個自分に付与します。
+    permission-message: あなたはバリアブロックを付与する権限がありません
     usage: /br
+  hideme:
+    permission: creator.admin
+    description: ゲームモードをinvisibleモードに切り替えます
+    permission-message: あなたはinvisibleモードを切り替える権限がありません
+    usage: /hideme
 
 permissions:
   creator.player:
