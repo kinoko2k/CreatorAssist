@@ -32,6 +32,31 @@ commands:
     description: バリアブロックを64個自分に付与します。
     permission-message: あなたはバリアブロックを付与する権限がありません
     usage: /br
+  cmd:
+    permission: creator.admin
+    description: コマンドブロックを1個自分に付与します。
+    permission-message: あなたはコマンドブロックを付与する権限がありません
+    usage: /cmd
+  devstick:
+    permission: creator.admin
+    description: デバッグ棒を1個自分に付与します。
+    permission-message: あなたはデバッグ棒を付与する権限がありません
+    usage: /devstick
+  lightblock:
+    permission: creator.admin
+    description: ライトブロックを1個自分に付与します。
+    permission-message: あなたはライトブロックを付与する権限がありません
+    usage: /lightblock
+  bundle:
+    permission: creator.admin
+    description: バンドルを1個自分に付与します。
+    permission-message: あなたはバンドルを付与する権限がありません
+    usage: /bundle
+  knowledgebook:
+    permission: creator.admin
+    description: 知恵の本を1個自分に付与します。
+    permission-message: あなたは知恵の本を付与する権限がありません
+    usage: /knowledgebook
   hideme:
     permission: creator.admin
     description: ゲームモードをinvisibleモードに切り替えます

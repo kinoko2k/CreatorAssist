@@ -65,12 +65,47 @@ public final class Creatorassist extends JavaPlugin implements Listener, Command
             player.sendMessage(ChatColor.WHITE + "バリアブロックを" + ChatColor.GOLD + "64個" + ChatColor.WHITE + "付与しました。");
             return true;
         }
+        if(command.getName().equalsIgnoreCase("cmd")) {
+            Player player = (Player) sender;
+            Inventory inv = player.getInventory();
+            inv.setItem(1, new ItemStack(Material.COMMAND_BLOCK,1));
+            player.sendMessage(ChatColor.WHITE + "コマンドブロックを" + ChatColor.GOLD + "1個" + ChatColor.WHITE + "付与しました。");
+            return true;
+        }
+        if(command.getName().equalsIgnoreCase("devstick")) {
+            Player player = (Player) sender;
+            Inventory inv = player.getInventory();
+            inv.setItem(1, new ItemStack(Material.DEBUG_STICK,1));
+            player.sendMessage(ChatColor.WHITE + "デバッグ棒を" + ChatColor.GOLD + "1個" + ChatColor.WHITE + "付与しました。");
+            return true;
+        }
+        if(command.getName().equalsIgnoreCase("lightblock")) {
+            Player player = (Player) sender;
+            Inventory inv = player.getInventory();
+            inv.setItem(1, new ItemStack(Material.LIGHT,64));
+            player.sendMessage(ChatColor.WHITE + "ライトブロックを" + ChatColor.GOLD + "64個" + ChatColor.WHITE + "付与しました。");
+            return true;
+        }
+        if(command.getName().equalsIgnoreCase("bundle")) {
+            Player player = (Player) sender;
+            Inventory inv = player.getInventory();
+            inv.setItem(1, new ItemStack(Material.BUNDLE,1));
+            player.sendMessage(ChatColor.WHITE + "バンドルを" + ChatColor.GOLD + "1個" + ChatColor.WHITE + "付与しました。");
+            return true;
+        }
+        if(command.getName().equalsIgnoreCase("knowledgebook")) {
+            Player player = (Player) sender;
+            Inventory inv = player.getInventory();
+            inv.setItem(1, new ItemStack(Material.KNOWLEDGE_BOOK,1));
+            player.sendMessage(ChatColor.WHITE + "知恵の本を" + ChatColor.GOLD + "1個" + ChatColor.WHITE + "付与しました。");
+            return true;
+        }
         if(command.getName().equalsIgnoreCase("hideme") && args.length == 1) {
             if (!(sender instanceof Player)) {
                 sender.sendMessage("このコマンドはゲーム内から実行してください！");
                 return true;
             }
-            Player s = (Player) sender;
+            Player p = (Player) sender;
 
             if (args.length != 1) {
                 return false;
@@ -81,7 +116,7 @@ public final class Creatorassist extends JavaPlugin implements Listener, Command
                 sender.sendMessage("Player " + args[0] + " というプレイヤーは見つかりません！");
                 return true;
             }
-            target.hidePlayer(s);
+            target.hidePlayer(p);
             return true;
         }
         return false;
