@@ -65,7 +65,7 @@ public final class Creatorassist extends JavaPlugin implements Listener, Command
             player.sendMessage(ChatColor.WHITE + "バリアブロックを" + ChatColor.GOLD + "64個" + ChatColor.WHITE + "付与しました。");
             return true;
         }
-        if(command.getName().equalsIgnoreCase("cmd")) {
+        if(command.getName().equalsIgnoreCase("cmdb")) {
             Player player = (Player) sender;
             Inventory inv = player.getInventory();
             inv.setItem(1, new ItemStack(Material.COMMAND_BLOCK,1));
